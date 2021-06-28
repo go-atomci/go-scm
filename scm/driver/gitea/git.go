@@ -10,7 +10,7 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/drone/go-scm/scm"
+	"github.com/go-atomci/go-scm/scm"
 )
 
 type gitService struct {

@@ -8,8 +8,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/drone/go-scm/scm"
-	"github.com/drone/go-scm/scm/driver/internal/null"
+	"github.com/go-atomci/go-scm/scm"
+	"github.com/go-atomci/go-scm/scm/driver/internal/null"
 )
 
 type organizationService struct {

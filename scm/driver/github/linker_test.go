@@ -8,7 +8,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/drone/go-scm/scm"
+	"github.com/go-atomci/go-scm/scm"
 )
 
 func TestLink(t *testing.T) {

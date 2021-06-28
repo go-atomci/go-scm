@@ -7,7 +7,7 @@ package gitlab
 import (
 	"context"
 
-	"github.com/drone/go-scm/scm"
+	"github.com/go-atomci/go-scm/scm"
 )
 
 type reviewService struct {

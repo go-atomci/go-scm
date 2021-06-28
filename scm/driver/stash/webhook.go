@@ -12,8 +12,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/drone/go-scm/scm"
-	"github.com/drone/go-scm/scm/driver/internal/hmac"
+	"github.com/go-atomci/go-scm/scm"
+	"github.com/go-atomci/go-scm/scm/driver/internal/hmac"
 )
 
 // TODO(bradrydzewski) push hook does not include commit message
@@ -162,8 +162,8 @@ func convertPushHook(src *pushHook) *scm.PushHook {
 			})
 	}
 	return &scm.PushHook{
-		Ref: change.RefID,
-		After: change.ToHash,
+		Ref:    change.RefID,
+		After:  change.ToHash,
 		Before: change.FromHash,
 		Commit: scm.Commit{
 			Sha:       change.ToHash,
