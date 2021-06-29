@@ -38,9 +38,10 @@ type (
 	// CommitListOptions provides options for querying a
 	// list of repository commits.
 	CommitListOptions struct {
-		Ref  string
-		Page int
-		Size int
+		Ref   string
+		Order string
+		Page  int
+		Size  int
 	}
 
 	// Signature identifies a git commit creator.
