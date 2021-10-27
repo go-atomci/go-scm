@@ -95,6 +95,7 @@ type (
 		Issues        IssueService
 		PullRequests  PullRequestService
 		Repositories  RepositoryService
+		SearchService SearchService
 		Reviews       ReviewService
 		Users         UserService
 		Webhooks      WebhookService
