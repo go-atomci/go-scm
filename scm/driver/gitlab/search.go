@@ -16,7 +16,7 @@ type searchService struct {
 }
 
 func (s *searchService) FindProjects(ctx context.Context, projectName string) ([]*scm.Repository, *scm.Response, error) {
-	path := fmt.Sprintf("api/v4/projects/%s", encode(projectName))
+	path := fmt.Sprintf("api/v4/search?scope=projects&search=%s", encode(projectName))
 	out := []*repository{}
 	res, err := s.client.do(ctx, "GET", path, nil, out)
 	return convertRepositoryList(out), res, err
